@@ -1,0 +1,410 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/26/2024 7:07:40 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-DP443HJ"
+  DTS:CreatorName="DESKTOP-DP443HJ\DELL"
+  DTS:DTSID="{16485F23-6C1F-46C7-83C3-3283AF8DEAC2}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{6DB9FB44-7351-4DF1-AA6B-5BF4D2E3D0F9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D376FC2A-AFC5-4ED8-9825-A1AAB817D3FD}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[System::UserName]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="DESKTOP-DP443HJ\DELL">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="First                Last "
+              DTS:DTSID="{2E6BD70F-3B43-4D60-98C9-85074718E56B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Last  "
+              DTS:DTSID="{C440BF99-7E34-4D93-9781-C71231346314}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date of birth"
+              DTS:DTSID="{C1E661F5-5484-47DD-B62B-F3CEA2FD8CE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{68B1CBC6-3681-47DE-8A5C-9398C1D93F29}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="St_ID"
+              DTS:DTSID="{16E8BD10-BB46-4BBE-920B-D47AF4227B98}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Student phone"
+              DTS:DTSID="{EBE2A406-99E6-4706-87B0-F475359AEBAE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="St_email"
+              DTS:DTSID="{8EAE3DD8-0D7A-4A5D-A548-8A95A4C43F67}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{73473DCA-0B08-4025-BB62-7364BC48DB44}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="G:\DA_Work\ETL\Students.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="First                Last "
+              DTS:DTSID="{8BBA029D-041C-45B7-9E1C-39A8BE67F20B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Last  "
+              DTS:DTSID="{88AE2DEA-FDE8-4093-A92A-7E86A22A215D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date of birth"
+              DTS:DTSID="{FFDDF453-919B-4995-971F-9182A00381D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{5D72D8A7-B793-4097-8A04-56F8E273FEF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="St_ID"
+              DTS:DTSID="{6CA8F007-69E6-4160-BC06-3EA7B3EA8BB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Student phone"
+              DTS:DTSID="{FBC171CE-EC80-4C63-A5C6-41EBA4B8F8C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="St_email"
+              DTS:DTSID="{28147939-4644-43C4-AB77-3FB49A751BAC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DF934100-6439-4A3F-9CB7-8E5973CFAB18}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="G:\DA_Work\ETL\Students Copy .txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="First               "
+              DTS:DTSID="{D39416F1-1E77-480E-BAC7-EE1856798ACC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Last  "
+              DTS:DTSID="{8C1C0651-EED1-49AC-AD1B-DAB2A6D87354}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date of birth"
+              DTS:DTSID="{1D9AB3D5-C6C2-433D-A03E-17DEFD742431}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{20FD624E-4F8E-47C5-92D4-F7086B42E9F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="St_ID"
+              DTS:DTSID="{FCBCDA52-7858-4958-AAC8-9A58A89A2D2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Student phone"
+              DTS:DTSID="{939A2492-AF93-40C5-9E3E-9A01D65DDA04}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{C576607E-A7DE-4612-A006-1FD16B0B314F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{3C8904B1-CA7D-440E-96F7-4B53D61A193D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{82BFD972-F398-4BAB-AB35-BF0D63D276C3}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="G:\DA_Work\ETL\Students Copy .txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="First               "
+              DTS:DTSID="{80682E52-7A9B-4D2D-99C4-966EC3BD5496}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Last  "
+              DTS:DTSID="{0E5B10B3-886E-46EB-B46A-A70BD90B7C7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date of birth"
+              DTS:DTSID="{5F421C1C-4A90-4872-97BA-62BFD5922B39}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{ABF40F73-7C7A-49C0-81BD-34E29B543DAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="St_ID"
+              DTS:DTSID="{BC1DE055-C78B-4A9D-82D2-206ED2B45F9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Student phone"
+              DTS:DTSID="{58AA39D7-BFDB-438F-9F67-209412E09594}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Test_ETL_Source]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3384352C-8B38-4C55-8838-3B632F590FA9}"
+      DTS:ObjectName="LocalHost.Test_ETL_Source">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Test_ETL_Source;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{3384352C-8B38-4C55-8838-3B632F590FA9}LocalHost.Test_ETL_Source;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B99240E1-7B9B-44AB-8F91-95AF36757981}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D3D2A36B-CB0B-4766-896C-54B17132A01B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

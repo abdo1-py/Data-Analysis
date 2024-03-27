@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>ETL_Sources</Name>
+    <LastWriteTime>2024-03-26T23:05:01.4853859Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>Package.dtsx</Name>
+      <LastWriteTime>2024-03-26T23:04:56.8040847Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Txt files.dtsx</Name>
+      <LastWriteTime>2024-03-26T20:43:52.6058024Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>

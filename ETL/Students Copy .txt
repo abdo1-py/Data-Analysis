@@ -1,0 +1,12 @@
+First               	 Last  	Date of birth	Gender	St_ID	Student phone		                           
+Joe	 Smith	 11/02/2006	Male	88261	5554441142		                      
+Liz	 Hernadez  	5/12/2006	Female	88262	5551112399		
+Liz	 Hernadez 	 05/12/2006	Female	88262	5551112399		
+Charles	 Bakely	   08/18/2006	Male	88264	5556662877		                   
+Charles	 Bakely	   08/18/2006	Male	88264	5556662877		                 
+Cindy	 Ye	   09/11/2007	Female	88721	5557786255		                    
+Cindy	 Ye	   09/11/2007	Female	88721	5557786255		                          
+Mark	 Romney	   12/11/2005	Male	88222	5553334621		                       
+Mark	 Romney	   12/11/2005	Male	88222	5553334621		
+Julie	 Wilson	   05/19/2006	Female	88266	5559987211		                
+Julie	 Wilson	   05/19/2006	Female	88266	5559987211		                 
