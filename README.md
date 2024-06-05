@@ -1,1 +1,1 @@
-# You will find projects during ITI period 
+#  I hope my projects could benefit you 
